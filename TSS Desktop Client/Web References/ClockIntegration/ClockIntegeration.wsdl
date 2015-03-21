@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetActiveSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActiveSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListOfMachines">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetListOfMachinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListOfMachinesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListOfMachinesForUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="activeSession" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListOfMachinesForUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListOfMachinesForUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListOfMachinesForUserGSMOnly">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="activeSession" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListOfMachinesForUserGSMOnlyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListOfMachinesForUserGSMOnlyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMachineCnInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMachineCnInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMachineCnInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteClockRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="activeSession" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payrollId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Year_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="month_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="day_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hour_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="min_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="site_" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteClockRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WriteClockRecordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteClockRecordWithDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="activeSession" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payrollId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Year_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="month_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="day_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hour_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="min_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="site_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="verifyMode_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="inOutMode_" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wc_" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteClockRecordWithDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WriteClockRecordWithDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetActiveSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActiveSession" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActiveSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfMachinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListOfMachines" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfMachinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListOfMachinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfMachinesForUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListOfMachinesForUser" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfMachinesForUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListOfMachinesForUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfMachinesForUserGSMOnlySoapIn">
+    <wsdl:part name="parameters" element="tns:GetListOfMachinesForUserGSMOnly" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfMachinesForUserGSMOnlySoapOut">
+    <wsdl:part name="parameters" element="tns:GetListOfMachinesForUserGSMOnlyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineCnInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMachineCnInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineCnInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMachineCnInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteClockRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteClockRecord" />
+  </wsdl:message>
+  <wsdl:message name="WriteClockRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteClockRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteClockRecordWithDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteClockRecordWithDetail" />
+  </wsdl:message>
+  <wsdl:message name="WriteClockRecordWithDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteClockRecordWithDetailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ClockIntegerationSoap">
+    <wsdl:operation name="GetActiveSession">
+      <wsdl:input message="tns:GetActiveSessionSoapIn" />
+      <wsdl:output message="tns:GetActiveSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachines">
+      <wsdl:input message="tns:GetListOfMachinesSoapIn" />
+      <wsdl:output message="tns:GetListOfMachinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachinesForUser">
+      <wsdl:input message="tns:GetListOfMachinesForUserSoapIn" />
+      <wsdl:output message="tns:GetListOfMachinesForUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachinesForUserGSMOnly">
+      <wsdl:input message="tns:GetListOfMachinesForUserGSMOnlySoapIn" />
+      <wsdl:output message="tns:GetListOfMachinesForUserGSMOnlySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineCnInfo">
+      <wsdl:input message="tns:GetMachineCnInfoSoapIn" />
+      <wsdl:output message="tns:GetMachineCnInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteClockRecord">
+      <wsdl:input message="tns:WriteClockRecordSoapIn" />
+      <wsdl:output message="tns:WriteClockRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteClockRecordWithDetail">
+      <wsdl:input message="tns:WriteClockRecordWithDetailSoapIn" />
+      <wsdl:output message="tns:WriteClockRecordWithDetailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ClockIntegerationSoap" type="tns:ClockIntegerationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetActiveSession">
+      <soap:operation soapAction="http://tempuri.org/GetActiveSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachines">
+      <soap:operation soapAction="http://tempuri.org/GetListOfMachines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachinesForUser">
+      <soap:operation soapAction="http://tempuri.org/GetListOfMachinesForUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachinesForUserGSMOnly">
+      <soap:operation soapAction="http://tempuri.org/GetListOfMachinesForUserGSMOnly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineCnInfo">
+      <soap:operation soapAction="http://tempuri.org/GetMachineCnInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteClockRecord">
+      <soap:operation soapAction="http://tempuri.org/WriteClockRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteClockRecordWithDetail">
+      <soap:operation soapAction="http://tempuri.org/WriteClockRecordWithDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ClockIntegerationSoap12" type="tns:ClockIntegerationSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetActiveSession">
+      <soap12:operation soapAction="http://tempuri.org/GetActiveSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachines">
+      <soap12:operation soapAction="http://tempuri.org/GetListOfMachines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachinesForUser">
+      <soap12:operation soapAction="http://tempuri.org/GetListOfMachinesForUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfMachinesForUserGSMOnly">
+      <soap12:operation soapAction="http://tempuri.org/GetListOfMachinesForUserGSMOnly" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineCnInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetMachineCnInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteClockRecord">
+      <soap12:operation soapAction="http://tempuri.org/WriteClockRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteClockRecordWithDetail">
+      <soap12:operation soapAction="http://tempuri.org/WriteClockRecordWithDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClockIntegeration">
+    <wsdl:port name="ClockIntegerationSoap" binding="tns:ClockIntegerationSoap">
+      <soap:address location="http://localhost:15519/ClockIntegeration.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ClockIntegerationSoap12" binding="tns:ClockIntegerationSoap12">
+      <soap12:address location="http://localhost:15519/ClockIntegeration.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
