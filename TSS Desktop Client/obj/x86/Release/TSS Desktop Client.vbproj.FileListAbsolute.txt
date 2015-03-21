@@ -1,0 +1,19 @@
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Release\TSS Desktop Client.exe.config
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\Interop.zkemkeeper.dll
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.vbproj.ResolveComReference.cache
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Release\TSS Desktop Client.exe.manifest
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Release\TSS Desktop Client.application
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Release\TSS Desktop Client.exe
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Release\TSS Desktop Client.XmlSerializers.dll
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Release\TSS Desktop Client.pdb
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Release\TSS Desktop Client.xml
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS_Desktop_Client.FrmDeviceInfo.resources
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS_Desktop_Client.FrmSystemSettings.resources
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS_Desktop_Client.Resources.resources
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.vbproj.GenerateResource.Cache
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.exe.manifest
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.application
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.exe
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.xml
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.pdb
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Release\TSS Desktop Client.XmlSerializers.dll

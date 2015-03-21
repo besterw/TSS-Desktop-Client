@@ -11,3 +11,7 @@ C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Debug\TSS Des
 C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Debug\TSS Desktop Client.exe
 C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Debug\TSS Desktop Client.xml
 C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Debug\TSS Desktop Client.pdb
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Debug\TSS Desktop Client.exe.manifest
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\bin\Debug\TSS Desktop Client.application
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Debug\TSS Desktop Client.exe.manifest
+C:\BESTERW-GD\System\TSS Desktop Client\TSS Desktop Client\obj\x86\Debug\TSS Desktop Client.application
