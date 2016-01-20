@@ -1,0 +1,128 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TSSDesktopClient
+</name>
+</assembly>
+<members>
+<member name="P:TSS_Desktop_Client.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TSS_Desktop_Client.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TSS_Desktop_Client.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.#ctor">
+	<remarks/>
+</member><member name="E:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetActiveSessionCompleted">
+	<remarks/>
+</member><member name="E:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesCompleted">
+	<remarks/>
+</member><member name="E:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUserCompleted">
+	<remarks/>
+</member><member name="E:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUserGSMOnlyCompleted">
+	<remarks/>
+</member><member name="E:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetMachineCnInfoCompleted">
+	<remarks/>
+</member><member name="E:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecordCompleted">
+	<remarks/>
+</member><member name="E:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecordWithDetailCompleted">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetActiveSession(System.String,System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetActiveSessionAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetActiveSessionAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachines">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesAsync">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUser(System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUserAsync(System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUserAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUserGSMOnly(System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUserGSMOnlyAsync(System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetListOfMachinesForUserGSMOnlyAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetMachineCnInfo(System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetMachineCnInfoAsync(System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.GetMachineCnInfoAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecord(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecordAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecordAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecordWithDetail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecordWithDetailAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.WriteClockRecordWithDetailAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TSS_Desktop_Client.ClockIntegration.ClockIntegeration.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.ClockIntegeration">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetActiveSessionCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TSS_Desktop_Client.ClockIntegration.GetActiveSessionCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetActiveSessionCompletedEventArgs">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesForUserCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesForUserCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesForUserCompletedEventArgs">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesForUserGSMOnlyCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesForUserGSMOnlyCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetListOfMachinesForUserGSMOnlyCompletedEventArgs">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetMachineCnInfoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TSS_Desktop_Client.ClockIntegration.GetMachineCnInfoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.GetMachineCnInfoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.WriteClockRecordCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TSS_Desktop_Client.ClockIntegration.WriteClockRecordCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.WriteClockRecordCompletedEventArgs">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.WriteClockRecordWithDetailCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TSS_Desktop_Client.ClockIntegration.WriteClockRecordWithDetailCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TSS_Desktop_Client.ClockIntegration.WriteClockRecordWithDetailCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

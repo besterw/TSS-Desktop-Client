@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="TSS Desktop Client.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="TSS Desktop Client" version="10.0.0.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="TSS Desktop Client" version="10.0.0.1" language="neutral" processorArchitecture="x86" />
     <commandLine file="TSS Desktop Client.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -13,18 +13,18 @@
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
-          requestedExecutionLevel node with one of the following.
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
-         compatibility then delete the requestedExecutionLevel node.
-    -->
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TSS Desktop Client.exe" size="64000">
-      <assemblyIdentity name="TSS Desktop Client" version="10.0.0.0" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TSS Desktop Client.exe" size="65024">
+      <assemblyIdentity name="TSS Desktop Client" version="10.0.0.1" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>hgwwXUw/zBkIydCgAg17uvI6Bng=</dsig:DigestValue>
+        <dsig:DigestValue>UQNMGWBYh2x1bOdTue3uZarPUNw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -71,4 +71,11 @@
       <dsig:DigestValue>ugivqWQ6kd/fpVIiRO33cBinl5k=</dsig:DigestValue>
     </hash>
   </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
 </asmv1:assembly>

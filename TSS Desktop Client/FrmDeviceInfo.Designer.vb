@@ -34,6 +34,7 @@ Partial Class FrmDeviceInfo
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -112,6 +113,10 @@ Partial Class FrmDeviceInfo
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(0, 17)
         '
+        'Timer3
+        '
+        Me.Timer3.Interval = 1000
+        '
         'FrmDeviceInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -144,4 +149,5 @@ Partial Class FrmDeviceInfo
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ImportDataFromAvailableDevicesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Timer3 As System.Windows.Forms.Timer
 End Class

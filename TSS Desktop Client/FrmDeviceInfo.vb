@@ -394,8 +394,14 @@ Public Class FrmDeviceInfo
         End Try
     End Sub
 
+
+    Dim _cmdArg As String = ""
+
     Private Sub FrmDeviceInfo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
+
+            Me._cmdArg = ""
+
             Me.Text = "ENI Supplies, Time & Attendance, Version: " & My.Application.Info.Version.ToString()
 
             If CInt(My.Settings.Interval) >= 120000 Then
@@ -406,9 +412,23 @@ Public Class FrmDeviceInfo
                 Me.Timer1.Interval = My.Settings.Interval
                 Me.Timer1.Enabled = True
             End If
-            Me.Timer1.Start()
 
-            Me.Timer2.Start()
+            For Each argument As String In My.Application.CommandLineArgs
+                ' Add code here to use the argument. 
+                If argument.ToString().ToLower = "go" Then
+                    _cmdArg = "go"
+                End If
+
+            Next
+
+            If _cmdArg = "go" Then
+                Me.Timer3.Start()
+            Else
+                Me.Timer1.Start()
+
+                Me.Timer2.Start()
+            End If
+
         Catch ex As Exception
             Me.TextBox1.Text = ex.Message & vbCrLf & vbCrLf & TextBox1.Text
             ' ensure that the timer is started
@@ -491,6 +511,21 @@ Public Class FrmDeviceInfo
         Application.DoEvents()
     End Sub
 
+    Private Sub Timer3_Tick(sender As System.Object, e As System.EventArgs) Handles Timer3.Tick
+        Try
+            Me.Timer3.Enabled = False
+
+            Dim s As String = createAuthentencation()
+
+            Me.UploadClockData(s)
+
+        Catch ex As Exception
+            Me.TextBox1.Text = ex.Message & vbCrLf & vbCrLf & TextBox1.Text
+            Me.Close()
+        Finally
+            Me.Close()
+        End Try
+    End Sub
 End Class
 
 Friend Class ClockRecord
